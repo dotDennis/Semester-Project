@@ -1,6 +1,5 @@
 main {
   flex-direction: column;
-  width: 100vw;
 }
 
 .hero {
@@ -17,6 +16,8 @@ main {
   background: var(--background);
   box-shadow: 6px 0 15px;
   height: 35%;
+  padding-bottom: 5%;
+  margin-bottom: 20%;
 }
 
 .container-txt {

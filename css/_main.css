@@ -21,14 +21,13 @@ html {
 }
 
 main {
-  position: relative;
-  top: 25%;
   display: flex;
   place-items: center;
   text-align: center;
 }
 
 .header-title {
+  margin-top: 30%;
   color: var(--orange);
   font-weight: 700;
   text-transform: uppercase;
