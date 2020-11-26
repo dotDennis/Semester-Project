@@ -1,12 +1,11 @@
 main {
   flex-direction: column;
   width: 100vw;
-  height: 200%;
 }
 
 .hero {
   width: 80%;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 15%;
   box-shadow: 6px 0 15px;
 }
@@ -17,19 +16,19 @@ main {
   width: 80%;
   background: var(--background);
   box-shadow: 6px 0 15px;
-  height: 450px;
+  height: 35%;
 }
 
 .container-txt {
   width: 92%;
   text-align: left;
-  padding-left: 1.25em;
+  padding-left: 1.25rem;
 }
 
 .container-txt h2 {
   color: var(--orange);
   position: relative;
-  font-size: 1.875em;
+  font-size: 1.875rem;
 }
 
 .container-txt h2::before {
@@ -48,7 +47,7 @@ main {
 
 .container-txt p {
   color: var(--light);
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
 }
 
 /* Button stylings */
@@ -70,4 +69,3 @@ main {
   width: 80%;
   margin: 0 auto;
 }
-

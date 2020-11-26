@@ -1,0 +1,9 @@
+main {
+  min-height: 100vh;
+  padding-bottom: 40%;
+}
+
+footer {
+  background: white;
+  width: 100%;
+}

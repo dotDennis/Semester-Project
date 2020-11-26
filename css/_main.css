@@ -9,7 +9,9 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
+  height: 100%;
   margin: 0;
   padding: 0;
   background: var(--background);
@@ -19,7 +21,7 @@ body {
 }
 
 main {
-  position: absolute;
+  position: relative;
   top: 25%;
   display: flex;
   place-items: center;
