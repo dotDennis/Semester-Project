@@ -1,0 +1,42 @@
+@import 'components/_variables.css';
+@import 'components/_navbar.css';
+@import 'components/_footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  place-items: center;
+  text-align: center;
+}
+
+.header-title {
+  color: var(--orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.375em;
+}
+
+.header-subtitle {
+  color: var(--light);
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 1.0625em;
+}
