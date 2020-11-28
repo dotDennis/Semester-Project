@@ -13,8 +13,13 @@ header {
   border-bottom: 2px solid var(--clr-text);
 }
 
-.logo {
-  padding-left: 5%;
+
+.yourDiv, .logo-a {
+  height: 86px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .links,
@@ -34,16 +39,6 @@ header {
   text-decoration: none;
 }
 
-.hamburger-label {
-  position: fixed;
-  z-index: 99;
-  padding-right: 5%;
-  right: 0;
-  font-size: 1.9rem;
-  color: var(--clr-text);
-  z-index: 100;
-}
-
 #hamburger-menu:checked ~ .links {
   position: relative;
   display: flex;
@@ -58,11 +53,11 @@ header {
   display: none;
 }
 
-#hamburger-menu:checked ~ label #menu-open {
+#hamburger-menu:checked > .yourDiv{
   display: none;
 }
 
-#hamburger-menu:checked ~ label #menu-close {
+#hamburger-menu:checked + label #menu-close {
   display: block;
 }
 
