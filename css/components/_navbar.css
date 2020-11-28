@@ -9,10 +9,6 @@ header {
   box-shadow: 0 6px 15px black;
 }
 
-nav {
-  min-height: 86px;
-}
-
 .active {
   border-bottom: 2px solid var(--clr-text);
 }
@@ -25,7 +21,7 @@ nav {
 #hamburger-menu {
   display: none;
   height: 100vh;
-  position: relative;
+  position: fixed;
 }
 
 .links li {
@@ -55,7 +51,7 @@ nav {
   justify-content: center;
   margin-bottom: 20px;
   left: 0%;
-  transform: translateY(-50%);
+  transform: translateY(-5%);
 }
 
 #menu-close {
