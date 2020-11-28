@@ -13,17 +13,22 @@ header {
   border-bottom: 2px solid var(--clr-text);
 }
 
-
-.yourDiv, .logo-a {
+.yourDiv,
+.logo-a {
   height: 86px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 2em;
   align-items: center;
   flex-direction: row-reverse;
 }
 
-.links,
 #hamburger-menu {
+  display: none;
+  align-items: center;
+}
+
+.links {
   display: none;
   height: 100vh;
   position: fixed;
@@ -37,6 +42,8 @@ header {
 .links a {
   color: var(--clr-text);
   text-decoration: none;
+  margin: 10px 0;
+  font-size: 2rem;
 }
 
 #hamburger-menu:checked ~ .links {
@@ -49,15 +56,21 @@ header {
   transform: translateY(-5%);
 }
 
+#menu-close,
+#menu-open {
+  font-size: 25px;
+}
+
 #menu-close {
   display: none;
+  margin-bottom: 10px;
 }
 
-#hamburger-menu:checked > .yourDiv{
+#hamburger-menu:checked ~ .yourDiv > label #menu-open {
   display: none;
 }
 
-#hamburger-menu:checked + label #menu-close {
+#hamburger-menu:checked ~ .yourDiv > label #menu-close {
   display: block;
 }
 
