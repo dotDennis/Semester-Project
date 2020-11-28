@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Science Museum</title>
-    <meta name="description" content="The community science museum.........">
+    <meta name="description" content="The community science museum........." />
 
     <!-- Global CSS -->
-    <link rel="stylesheet" href="css/_main.css">
+    <link rel="stylesheet" href="css/_main.css" />
 
     <!-- Per-Site CSS -->
-    <link rel="stylesheet" href="css/pages/_home.css">
+    <link rel="stylesheet" href="css/pages/_home.css" />
 
     <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/adc390fe7b.js" crossorigin="anonymous"></script>
+   
+  </head>
 
-</head>
-<body>
-<!-- Navigation Menu (start) -->
-    <header class="nav-header">
-        <h1 class="logo">Logo</h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav class="nav-top">
-            <ul>
-                <li><a href="#">Home</a></li>
+  <body>
+      <header>
+      <!-- Navigation Menu (start) -->
+        <nav>
+          <!-- Checkbox hack start -->
+          <input type="checkbox" id="hamburger-menu">
+          <label for="hamburger-menu" class="hamburger-label">
+            <i class="fas fa-bars" id="menu-open"></i>
+            <i class="fas fa-times" id="menu-close"></i>
+          </label>
+          <!-- Checkbox hack end -->
+
+          <!-- Logo -->
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Community Science Museum" /></a>
+          
+          <!-- Navigation links start-->
+
+            <div class="links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Exhibitions</a></li>
                 <li><a href="#">Get in touch</a></li>
-            </ul>
+            </div>
         </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-            <i id="nav-open" class="fas fa-bars"></i>
-            <i id="nav-close" class="fas fa-times"></i>
-        </label>
-    </header>
-<!-- Navigation Menu (close) -->
-    <main>
-        <header class="header-main">
-           <h1 class="header-title">Community Science Museum</h1>
-           <h3 class="header-subtitle">Explore Together</h2>
-        </header>
-<!-- Content Starts Here -->
-        <img src="img/mainpg.jpg" alt="" class="hero">
-        <div class="container">
-            <div class="container-txt">
-                <h2>Join Us!</h2>
-                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                   Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
-                   The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us
-                </p>
-                <div class="btn-container"><a class="btn" href="#">Learn More</a></div>
-            </div>
-        </div>
-    </main>
-<!-- Content Ends Here -->
+          <!-- Navigation links end -->
+      <!-- Navigation Menu (end) -->
+      </header>
 
-<!-- Footer Starts Here -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section location">
-                <h3 class="footer-title">Location</h3>
-                <p class="footer-txt">Community Science Museum</p>
-                <p class="footer-txt">200 Larking St.</p>
-                <p class="footer-txt">San Francisco, CA 94102</p>
-            </div>
-            <div class="footer-section hours">
-                <h3 class="footer-title">Hours</h3>
-                <p class="footer-txt">Monday: Closed</p>
-                <p class="footer-txt">Tuesday: 10 AM - 4 PM</p>
-                <p class="footer-txt">Wednesday: 10 AM - 4 PM</p>
-                <p class="footer-txt">Thursday: 10 AM - 4 PM</p>
-                <p class="footer-txt">Friday: 10 AM - 7 PM</p>
-                <p class="footer-txt">Saturday: 9 AM - 4 PM</p>
-                <p class="footer-txt">Sunday: 9 AM - 4 PM</p>
 
-            </div>
-            <div class="footer-section explore">
-                <h3 class="footer-title">Explore</h3>
-                <p class="footer-txt">Visit</p>
-                <p class="footer-txt">Exhibitions</p>
-                <p class="footer-txt">Support the Museum</p>
-                <p class="footer-txt">Get In Touch</p>
-            </div>
-            <div class="footer-bottom">&copy; Dennis Løvold | Designed by <a href="dennisl.no">Dennis</a></div>
+
+
+    <div class="content-wrapper">
+
+      <main>
+        <h1 class="title">COMMUNITY SCIENCE MUSEUM</h1>
+        <p class="subtitle">EXPLORE TOGETHER</p>
+
+        <!-- Content Starts Here -->
+
+        <img class="primary-image" src="img/mainpg.jpg" alt="Image of our museum"/>
+
+        <div class="card">
+          <h2 class="card-title">JOIN US!</h2>
+          <p class="card-txt"></p>
+            Come join us at the Community Science Museum where we’re committed
+            to making science accessible to all. Over the course of human
+            history, science has developed from our early understanding of fire,
+            wind, water, and earth to exploring everything from galaxies far
+            away to the very building blocks of life itself. The aim of our
+            museum is to create a space where everyone can experience the
+            wonders of our discoveries and perhaps even ignite a lifelong
+            passion to continue the exploration of the world around us
+          </p>
+          <a href="index.html" class="btn">LEARN MORE</a>
         </div>
-    </footer>
-</body>
+              <!-- Content Ends Here -->
+      </main>
+
+
+
+
+      <!-- Footer Starts Here -->
+      <footer>
+        <div class="footer-section location">
+          <h3 class="footer-title">Location</h3>
+          <p class="footer-txt">Community Science Museum</p>
+          <p class="footer-txt">200 Larking St.</p>
+          <p class="footer-txt">San Francisco, CA 94102</p>
+        </div>
+        <div class="footer-section hours">
+          <h3 class="footer-title">Hours</h3>
+          <p class="footer-txt">Monday: Closed</p>
+          <p class="footer-txt">Tuesday: 10 AM - 4 PM</p>
+          <p class="footer-txt">Wednesday: 10 AM - 4 PM</p>
+          <p class="footer-txt">Thursday: 10 AM - 4 PM</p>
+          <p class="footer-txt">Friday: 10 AM - 7 PM</p>
+          <p class="footer-txt">Saturday: 9 AM - 4 PM</p>
+          <p class="footer-txt">Sunday: 9 AM - 4 PM</p>
+        </div>
+        <div class="footer-section explore">
+          <h3 class="footer-title">Explore</h3>
+          <ul>
+            <li><a href="#" class="footer-txt">Visit</a></li>
+            <li><a href="#" class="footer-txt">Exhibitions</a></li>
+            <li><a href="#" class="footer-txt">Support the Museum</a></li>
+            <li><a href="#" class="footer-txt">Get In Touch</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          &copy; Dennis Løvold | Designed by <a href="https://dennisl.no/">Dennis</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

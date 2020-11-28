@@ -1,5 +1,7 @@
 :root {
-  --background: #263238;
-  --light: #e6d6b5;
-  --orange: #ff8c1a;
+  --clr-bg: #263238;
+  --clr-text: #e6d6b5;
+  --clr-accent: #ff8c1a;
+  --txt-courier: "Courier Prime", monospace;
+  --txt-roboto: "Roboto", sans-serif,
 }

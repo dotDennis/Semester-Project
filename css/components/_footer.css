@@ -1,12 +1,8 @@
 footer {
-  margin-top: auto;
+  height: 200px;
+  margin-top: -200px;
   background: var(--background);
   box-shadow: inset 0px 4px 10px;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 0.8fr 0.15fr;
 }
 
 .footer-section {
