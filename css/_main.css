@@ -3,7 +3,7 @@
 
 @import 'components/_variables.css';
 @import 'components/_navbar.css';
-/*@import 'components/_footer.css'; */
+@import 'components/_footer.css';
 
 *,
 *::after,
@@ -14,9 +14,11 @@
 html {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   line-height: 1.2;
@@ -27,18 +29,22 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-flow: column nowrap;
 }
 
 .content-wrapper {
-  margin: calc(100px + 2em) 2em 2em 2em;
+  padding-top: 86px;
+  min-height: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  padding-bottom: 45rem;
 }
 
 .title {
+  padding-top: 2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -63,7 +69,47 @@ main {
   margin: 10vh auto;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background: var(--clr-bg);
+  box-shadow: 0px 6px 15px black;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  text-align: left;
+  position: relative;
+}
+
+.index-card-title::after { /* per card magic number ( from inspect element) */
+  width: 130px;
+}
+
+.card-title::after {
+  content: ' ';
+  position: absolute;
+  height: 2px;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  background: var(--clr-bg);
+  box-shadow: 0px 4px 4px black;
+}
+
 .btn {
+  text-align: center;
+  align-self: center;
   background: var(--clr-bg);
   color: var(--clr-accent);
   font-family: var(--txt-courier);
@@ -73,14 +119,58 @@ main {
   border: 0;
   font-size: 1.125rem;
   text-transform: uppercase;
-  display: inline-block;
   text-decoration: none;
+  margin-bottom: 25px;
 }
 
-/* Footer */
 
-footer {
-  margin-top: 2rem;
-}
 
-/* Navigation Styling */
+/* Media Queries (desktop transition) */ 
+@media screen and (min-width: 768px) {
+  
+  .title {
+    padding-top: 4.5rem; /* just to add some more spacing between the title and navbar */
+  }
+
+  /* footer fix */
+  .content-wrapper {
+    padding-bottom: 60rem;
+  }
+
+  /* Card queries */
+  .primary-image {
+    max-height: 743px;
+    min-width: 70%;
+    max-width: 1509px;
+    object-fit: cover;
+  }
+  .card-container {
+    width: 55%;
+    position: absolute;
+    top: 1020px;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+  .card-txt {
+    max-width: 80%;
+    font-size: 1.3rem;
+  }
+  .btn {
+    align-self: auto;
+  }
+} 
+
+ /* footer fix */
+
+ @media screen and (min-width: 1000px) {
+   .content-wrapper {
+     padding-bottom: 50rem;
+   }
+ }
+
+  @media screen and (min-width: 1250px) {
+   .content-wrapper {
+     padding-bottom: 45rem;
+   }
+ }

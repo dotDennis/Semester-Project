@@ -20,12 +20,13 @@
   </head>
 
   <body>
+        <div class="content-wrapper">
       <header>
       <!-- Navigation Menu (start) -->
         <nav>
           <!-- Checkbox hack start -->
           <input type="checkbox" id="hamburger-menu">
-          <div class="yourDiv">
+          <div class="logo-burger">
             <label for="hamburger-menu" class="hamburger-label">
             <i class="fas fa-bars" id="menu-open"></i>
             <i class="fas fa-times" id="menu-close"></i>
@@ -51,7 +52,7 @@
 
 
 
-    <div class="content-wrapper">
+
 
       <main>
         <h1 class="title">COMMUNITY SCIENCE MUSEUM</h1>
@@ -61,9 +62,10 @@
 
         <img class="primary-image" src="img/mainpg.jpg" alt="Image of our museum"/>
 
-        <div class="card">
-          <h2 class="card-title">JOIN US!</h2>
-          <p class="card-txt"></p>
+        <div class="card-container">
+          <div class="card">
+          <h2 class="card-title index-card-title">JOIN US!</h2>
+          <p class="card-txt">
             Come join us at the Community Science Museum where we’re committed
             to making science accessible to all. Over the course of human
             history, science has developed from our early understanding of fire,
@@ -74,15 +76,14 @@
             passion to continue the exploration of the world around us
           </p>
           <a href="index.html" class="btn">LEARN MORE</a>
+          </div>
         </div>
               <!-- Content Ends Here -->
       </main>
 
-
-
-
-      <!-- Footer Starts Here -->
+          <!-- Footer Starts Here -->
       <footer>
+        <div class="footer-flex">
         <div class="footer-section location">
           <h3 class="footer-title">Location</h3>
           <p class="footer-txt">Community Science Museum</p>
@@ -102,16 +103,18 @@
         <div class="footer-section explore">
           <h3 class="footer-title">Explore</h3>
           <ul>
-            <li><a href="#" class="footer-txt">Visit</a></li>
-            <li><a href="#" class="footer-txt">Exhibitions</a></li>
-            <li><a href="#" class="footer-txt">Support the Museum</a></li>
-            <li><a href="#" class="footer-txt">Get In Touch</a></li>
+            <li><a href="#"><p class="footer-txt">Visit</p></a></li>
+            <li><a href="#"><p class="footer-txt">Exhibitions</p></a></li>
+            <li><a href="#"><p class="footer-txt">Support the Museum</p></a></li>
+            <li><a href="#"><p class="footer-txt">Get In Touch</p></a></li>
           </ul>
         </div>
-        <div class="footer-section">
+      </div>
+        <div class="footer-bottom">
           &copy; Dennis Løvold | Designed by <a href="https://dennisl.no/">Dennis</a>
         </div>
       </footer>
     </div>
+
   </body>
 </html>

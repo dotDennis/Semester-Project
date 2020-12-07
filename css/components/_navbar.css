@@ -7,13 +7,14 @@ header {
   width: 100%;
   top: 0;
   box-shadow: 0 6px 15px black;
+  z-index: 100;
 }
 
 .active {
   border-bottom: 2px solid var(--clr-text);
 }
 
-.yourDiv,
+.logo-burger,
 .logo-a {
   height: 86px;
   display: flex;
@@ -46,6 +47,8 @@ header {
   font-size: 1.5em;
 }
 
+/* css checkbox hack 'magic' */
+
 #hamburger-menu:checked ~ .links {
   position: relative;
   display: flex;
@@ -66,11 +69,11 @@ header {
   margin-bottom: 10px;
 }
 
-#hamburger-menu:checked ~ .yourDiv > label #menu-open {
+#hamburger-menu:checked ~ .logo-burger > label #menu-open {
   display: none;
 }
 
-#hamburger-menu:checked ~ .yourDiv > label #menu-close {
+#hamburger-menu:checked ~ .logo-burger > label #menu-close {
   display: block;
 }
 
@@ -82,7 +85,7 @@ header {
     width: 100%;
     justify-content: center;
   }
-  .yourDiv {
+  .logo-burger {
     margin: unset;
   }
   .hamburger-label {
@@ -104,7 +107,7 @@ header {
     font-size: 1.3em;
     position: relative;
   }
-  .inactive::before{
+  .inactive::before {
     content: '';
     display: block;
     height: 2px;
