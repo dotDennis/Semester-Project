@@ -51,6 +51,7 @@ main {
   font-size: clamp(2rem, 4vw, 5rem);
   color: var(--clr-accent);
   text-align: center;
+  max-width: 95%;
 }
 
 .subtitle {
