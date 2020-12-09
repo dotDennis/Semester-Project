@@ -50,11 +50,12 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-flex {
-    flex-direction: row;
-  }
   footer {
     height: 24rem;
+  }
+  .footer-flex {
+    flex-direction: row;
+    padding-left: unset;
   }
   .footer-bottom {
     padding-top: 3.5rem;
