@@ -180,16 +180,18 @@ main {
 /* Form styling */
 
 .form {
+  margin-top: 5%;
   display: flex;
-  width: 70%;
+  width: 80%;
   flex-direction: column;
   align-items: center;
   background: var(--clr-bg);
   box-shadow: 0 0 15px black;
-  padding: 10% 10%;
+  padding: 5% 5%;
 }
 
-.form label, .form input,
+.form label,
+.form input,
 .form textarea {
   width: 100%;
   max-width: 800px;
@@ -203,7 +205,7 @@ main {
 .form input {
   margin-top: 5px;
   height: 40px;
-  max-height: 200px;
+  font-family: var(--txt-roboto);
 }
 
 .form input:focus,
@@ -214,11 +216,14 @@ main {
 
 .form textarea {
   resize: vertical;
-  min-height: 40px;
+  min-height: 80px;
   max-height: 200px;
+  padding-top: 1%;
+  font-family: var(--txt-roboto);
 }
 
 .btn-submit {
+  margin-top: 5%;
   width: 100%;
   margin-bottom: 0;
   max-width: 800px;
@@ -263,6 +268,12 @@ main {
   }
   .btn {
     align-self: auto;
+  }
+  .btn-submit {
+    margin-top: 3%;
+  }
+  .form {
+    width: 60%;
   }
 }
 
