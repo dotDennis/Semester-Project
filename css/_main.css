@@ -135,6 +135,43 @@ main {
   transition: transform 0.3s ease-out;
 }
 
+/* Info-cards */
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.info-container-specific {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-container-specific .fal, .fas {
+  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+}
+
+.info-txt {
+  margin-left: 5%;
+  font-family: var(--txt-courier);
+  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+}
+
+.ticket {
+  transform: rotate(-45deg);
+}
+
+.center {
+  justify-content: center;
+}
+
+.center-txt {
+  color: var(--clr-accent);
+  text-align: center;
+}
+
 /* Media Queries (desktop transition) */
 @media screen and (min-width: 768px) {
   .title {
@@ -161,10 +198,30 @@ main {
     padding-bottom: 0%;
     grid-column: 2;
   }
+  .card-title::after {
+    height: 4px;
+  }
   .card-txt {
     max-width: 100%;
   }
   .btn {
     align-self: auto;
+  }
+}
+
+
+/* Media Queries bug fixes */
+
+/* fix for when card titles wrap, the underlying line has to follow. */
+
+@media screen and (max-width: 322px) {
+  .biology::after {
+    top: 4rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .aero::after {
+    top: 4rem;
   }
 }
