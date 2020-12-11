@@ -37,7 +37,7 @@
             <li><a href="../index.html" class="inactive">Home</a></li>
             <li><a href="events.html" class="inactive">Events</a></li>
             <li><a href="exhibitions.html" class="inactive">Exhibitions</a></li>
-            <li><a href="getintouch.html" class="active" aria-current="page">Get in touch</a></li>
+            <li><a href="getintouch.html" class="inactive">Get in touch</a></li>
           </div>
         </nav>
         <!-- Navigation links end -->
@@ -46,52 +46,16 @@
 
       <main>
         <h1 class="title">COMMUNITY SCIENCE MUSEUM</h1>
-        <p class="subtitle">EXPLORE TOGETHER</p>
+        <p class="subtitle">contact us</p>
 
         <!-- Content Starts Here -->
-
-        <div class="card-container">
-          <div class="card-image-container">
-            <img class="card-image" src="../img/support.jpg" alt="Image of our museum" />
-          </div>
-          <div class="card">
-            <h2 class="card-title">Support</h2>
-            <p class="card-txt">
-              There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to
-              the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that
-              you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
-            </p>
-            <a href="pages/explore.html" class="btn">Get in touch</a>
-          </div>
-        </div>
-
-        <div class="card-container">
-          <div class="card-image-container"></div>
-          <div class="card">
-            <h2 class="card-title">Volunteer</h2>
-            <p class="card-txt">
-              A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has
-              its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and
-              volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different
-              spheres.
-            </p>
-            <p class="card-txt">Please contact us if you’d like to find out more about how you can get involved.</p>
-            <a href="pages/explore.html" class="btn">Get in touch</a>
-          </div>
-        </div>
-
-        <div class="card-container">
-          <div class="card-image-container"></div>
-          <div class="card">
-            <h2 class="card-title">Internships</h2>
-            <p class="card-txt">
-              Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be
-              just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate
-              about science and sharing it with the wider community.
-            </p>
-            <a href="pages/explore.html" class="btn">Get in touch</a>
-          </div>
-        </div>
+        <form class="form">
+          <label for="first-name">First Name<input type="text" placeholder="Enter your first name" name="first-name" required/></label>
+          <label for="last-name">Last Name<input type="text" placeholder="Enter your last name" name="last-name" required /></label>
+          <label for="email">E-mail<input type="email" placeholder="ex: myname@example.com" name="email" required /></label>
+          <label for="message">Your message <textarea placeholder="Enter your message here" name="message" required></textarea></label>
+          <button class="btn btn-submit" type="submit" name="submit">Send</button>
+        </form>
         <!-- Content Ends Here -->
       </main>
 

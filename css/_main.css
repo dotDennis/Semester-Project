@@ -5,6 +5,8 @@
 @import 'components/_navbar.css';
 @import 'components/_footer.css';
 
+/* Global structure settings */
+
 *,
 *::after,
 *::before {
@@ -24,7 +26,7 @@ body {
   line-height: 1.2;
   background-color: var(--clr-bg);
   color: var(--clr-text);
-  font-family: 'Courier Prime', monospace;
+  font-family: var(--txt-courier);
 }
 
 main {
@@ -42,6 +44,8 @@ main {
   flex-flow: column nowrap;
   padding-bottom: 45rem;
 }
+
+/* Content */
 
 .title {
   padding-top: 2rem;
@@ -149,7 +153,8 @@ main {
   align-items: center;
 }
 
-.info-container-specific .fal, .fas {
+.info-container-specific .fal,
+.fas {
   font-size: clamp(1.2rem, 1.7vw, 1.7rem);
 }
 
@@ -172,6 +177,54 @@ main {
   text-align: center;
 }
 
+/* Form styling */
+
+.form {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  background: var(--clr-bg);
+  box-shadow: 0 0 15px black;
+  padding: 10% 10%;
+}
+
+.form label, .form input,
+.form textarea {
+  width: 100%;
+  max-width: 800px;
+  outline: none;
+}
+
+.form label {
+  margin: 2% 0 2% 0;
+}
+
+.form input {
+  margin-top: 5px;
+  height: 40px;
+  max-height: 200px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid var(--clr-bg);
+  box-shadow: 0 0 15px black;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 40px;
+  max-height: 200px;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-bottom: 0;
+  max-width: 800px;
+  font-size: clamp(0.7rem, 1.3vw, 1.6rem);
+}
+
 /* Media Queries (desktop transition) */
 @media screen and (min-width: 768px) {
   .title {
@@ -182,6 +235,10 @@ main {
     display: grid;
     box-shadow: 0px 6px 15px black;
     overflow: hidden;
+    grid-template-columns: 4fr 5fr;
+  }
+  .card-100 {
+    grid-template-columns: 1fr;
   }
   .card-image-container {
     height: 100%;
@@ -208,7 +265,6 @@ main {
     align-self: auto;
   }
 }
-
 
 /* Media Queries bug fixes */
 
