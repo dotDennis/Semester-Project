@@ -67,6 +67,12 @@ main {
   text-align: center;
 }
 
+.support-image {
+  margin-top: 5%;
+  width: 80%;
+  box-shadow: 0 0 15px black;
+}
+
 /* CARD */
 
 .card-container {
@@ -274,6 +280,11 @@ main {
   }
   .form {
     width: 60%;
+  }
+  .support-image {
+    width: 60%;
+    max-height: 600px;
+    object-fit: cover;
   }
 }
 
