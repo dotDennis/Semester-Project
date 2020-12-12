@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community Science Museum</title>
-    <meta name="description" content="The community science museum........." />
+    <title>CSM - Get in Touch</title>
+    <meta name="description" content="We at the Community Science Museum are looking forward to hearing from you, no matter what your message for us is." />
 
     <!-- Global CSS -->
     <link rel="stylesheet" href="../css/_main.css" />
@@ -34,10 +34,10 @@
 
           <!-- Navigation links start-->
           <div class="links">
-            <li><a href="../index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="../index.html" class="inactive">Home</a></li>
             <li><a href="events.html" class="inactive">Events</a></li>
             <li><a href="exhibitions.html" class="inactive">Exhibitions</a></li>
-            <li><a href="getintouch.html" class="inactive">Get in touch</a></li>
+            <li><a href="getinvolved.html" class="inactive">Get Involved</a></li>
           </div>
         </nav>
         <!-- Navigation links end -->
@@ -46,25 +46,16 @@
 
       <main>
         <h1 class="title">COMMUNITY SCIENCE MUSEUM</h1>
-        <p class="subtitle">EXPLORE TOGETHER</p>
+        <p class="subtitle">contact us</p>
 
         <!-- Content Starts Here -->
-
-        <div class="card-container">
-          <div class="card-image-container">
-            <img class="card-image" src="img/mainpg.jpg" alt="Image of our museum" />
-          </div>
-          <div class="card">
-            <h2 class="card-title">Join us!</h2>
-            <p class="card-txt">
-              Come join us at the Community Science Museum where we’re committed to making science accessible to all. Over the course of human history, science
-              has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building
-              blocks of life itself. The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even
-              ignite a lifelong passion to continue the exploration of the world around us
-            </p>
-            <a href="pages/explore.html" class="btn">LEARN MORE</a>
-          </div>
-        </div>
+        <form class="form">
+          <label for="first-name">First Name<input type="text" placeholder="Enter your first name" class="input-txt" name="first-name" required /></label>
+          <label for="last-name">Last Name<input type="text" placeholder="Enter your last name" class="input-txt" name="last-name" required /></label>
+          <label for="email">E-mail<input type="email" placeholder="ex: myname@example.com" class="input-txt" name="email" required /></label>
+          <label for="message">Your message <textarea placeholder="Enter your message here" class="input-txt" name="message" required></textarea></label>
+          <button class="btn btn-submit" type="submit" name="submit">Send</button>
+        </form>
         <!-- Content Ends Here -->
       </main>
 
@@ -96,10 +87,10 @@
                 <a href="exhibitions.html"><p class="footer-txt">Exhibitions</p></a>
               </li>
               <li>
-                <a href="supportmuseum.html"><p class="footer-txt">Support the Museum</p></a>
+                <a href="getinvolved.html"><p class="footer-txt">Support the Museum</p></a>
               </li>
               <li>
-                <a href="getintouch.html"><p class="footer-txt">Get In Touch</p></a>
+                <a href="contactus.html"><p class="footer-txt">Contact Us</p></a>
               </li>
             </ul>
           </div>
