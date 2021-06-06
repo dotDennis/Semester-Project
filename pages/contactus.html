@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSM - Get in Touch</title>
-    <meta name="description" content="We at the Community Science Museum are looking forward to hearing from you, no matter what your message for us is." />
+    <meta
+      name="description"
+      content="We at the Community Science Museum are looking forward to hearing from you, no matter what your message for us is."
+    />
 
     <!-- Global CSS -->
     <link rel="stylesheet" href="../css/_main.css" />
@@ -29,16 +32,16 @@
             <!-- Checkbox hack end -->
 
             <!-- Logo -->
-            <a class="logo-a" href="../index.html"><img class="logo" src="../img/logo.png" alt="Community Science Museum" /></a>
+            <a aria-label="return to home page" class="logo-a" href="../index.html"><img class="logo" src="../img/logo.png" alt="Community Science Museum" /></a>
           </div>
 
           <!-- Navigation links start-->
-          <div class="links">
+          <ul class="links">
             <li><a href="../index.html" class="inactive">Home</a></li>
             <li><a href="events.html" class="inactive">Events</a></li>
             <li><a href="exhibitions.html" class="inactive">Exhibitions</a></li>
             <li><a href="getinvolved.html" class="inactive">Get Involved</a></li>
-          </div>
+          </ul>
         </nav>
         <!-- Navigation links end -->
         <!-- Navigation Menu (end) -->
@@ -49,18 +52,32 @@
         <p class="subtitle">contact us</p>
 
         <!-- Content Starts Here -->
+
+        <div class="status-container"></div>
+
         <form class="form">
-          <label for="first-name">First Name<input type="text" placeholder="Enter your first name" class="input-txt" name="first-name" required /></label>
-          <label for="last-name">Last Name<input type="text" placeholder="Enter your last name" class="input-txt" name="last-name" required /></label>
-          <label for="email">E-mail<input type="email" placeholder="ex: myname@example.com" class="input-txt" name="email" required /></label>
-          <label for="message">Your message <textarea placeholder="Enter your message here" class="input-txt" name="message" required></textarea></label>
-          <button class="btn btn-submit" type="submit" name="submit">Send</button>
+          <label for="firstName">First Name*</label>
+          <input name="firstName" placeholder="Enter your first name" class="input-txt" />
+          <span class="form-error">Enter your first name (minimum 1 character)</span>
+          <label for="lastName">Last Name*</label>
+          <input name="lastName" placeholder="Enter your last name" class="input-txt" />
+          <span class="form-error">Enter your last name (minimum 1 character)</span>
+
+          <label for="email">E-mail*</label>
+          <input name="email" placeholder="ex: myname@example.com" class="input-txt" />
+          <span class="form-error">Enter a valid email address</span>
+
+          <label for="message">Your message*</label>
+          <textarea name="message" placeholder="Enter your message here" class="input-txt"></textarea>
+          <span class="form-error">Enter your message (minimum 15 characters)</span>
+
+          <button class="btn btn-submit" type="button">Send</button>
         </form>
         <!-- Content Ends Here -->
       </main>
 
       <footer>
-        <div class="footer-flex">
+      <section class="footer-flex">
           <div class="footer-section location">
             <h3 class="footer-title">Location</h3>
             <p class="footer-txt">Community Science Museum</p>
@@ -95,8 +112,9 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">&copy; Dennis Løvold | Designed by <a href="https://dennisl.no/">Dennis</a></div>
+        <section class="footer-bottom">&copy; Dennis Løvold | Designed by <a href="https://dennisl.no/">Dennis</a></div>
       </footer>
     </div>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
